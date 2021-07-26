@@ -1,5 +1,7 @@
+//Libraries included
 #include<stdio.h>
 #include<stdlib.h>
+
 //prototipos
 int impar(int x);
 int main(void)
