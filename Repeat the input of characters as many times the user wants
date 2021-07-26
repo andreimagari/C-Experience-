@@ -21,7 +21,7 @@ int main(void)
        printf("%s",result);
     }
     free(result);
-    getch();
+    getchar();
     return 0;
 }
 //funçoes
