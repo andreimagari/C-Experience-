@@ -1,0 +1,34 @@
+
+#include <stdio.h>
+#include <stdlib.h>
+
+//prototipos
+char*memcpy(char *dest, char *origem, int limit);
+int main(void)
+{
+  //declarações
+  int limit=10;
+  char*result,origem[10],dest[10];
+  
+  //programa  
+  
+  printf("Digite uma cadeia de caracteres: \n");
+  fgets(origem,limit,stdin);
+  
+  result=memcpy(&dest[0],&origem[0],limit);
+  printf("destino %s\n",result);
+        
+  getch();  
+  return 0;    
+}
+//funções
+char *memcpy(char *dest, char *origem, int limit)
+{
+    int cont=0;
+    
+    do{
+        dest[cont]=origem[cont];
+        cont++;
+    }while(cont<limit);
+    return &dest[0];
+}
