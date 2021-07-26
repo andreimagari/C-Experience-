@@ -1,0 +1,35 @@
+#include<stdio.h>
+#include<stdlib.h>
+//prototipos
+int impar(int x);
+int main(void)
+{
+ //declarações
+ int num,result=0;
+ //programa
+ printf("Digite um numero para verificar se eh impar: \n");
+ scanf("%d",&num);
+ result=impar(num);
+ if(result==1)
+ {
+     printf("verdade\n");  
+ }
+ else
+ {
+    printf("falso\n");     
+ } 
+ getch();
+ return 0;
+}
+//funções
+int impar(int x)
+{
+    if(x%2==0)
+    {
+        return 0;
+    }
+    else
+    {
+        return 1;
+    }
+}
