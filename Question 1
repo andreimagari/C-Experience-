@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main(void)
+{
+  //declarações
+  int idade,result=0;
+  //programa
+  printf("Digite a sua idade: \n");
+  scanf("%d",&idade);
+  result=idade*525600;
+  printf("Sua idade em minutos e: %d\n",result);
+ 
+  getch();
+  return 0;    
+}
