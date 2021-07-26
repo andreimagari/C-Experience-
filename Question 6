@@ -1,0 +1,41 @@
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+//prototipos
+char *repete(char *string, int n);
+int main(void)
+{
+    //declaraçoes
+    char carac[10];
+    char*result;
+    int n,cont;
+    //programa
+    printf("digite uma cadeia de caracteres: \n");
+    fgets(carac,10,stdin);
+    printf("digite a quant. de repeticoes: ");
+    scanf("%d",&n);
+    result=repete(&carac[0],n);
+    for(cont=0;cont<n;cont++)
+    {
+       printf("%s",result);
+    }
+    free(result);
+    getch();
+    return 0;
+}
+//funçoes
+char *repete(char *string, int n)
+{
+    char*ptr;
+    ptr=(char*)malloc(strlen(string)+1);
+    if(ptr == NULL)
+    {
+       printf("Problemas na Alocação de Memória!");
+    }
+    else
+    {
+      strcpy(ptr, string);
+    }
+    return ptr; 
+}
