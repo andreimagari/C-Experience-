@@ -1,11 +1,14 @@
+//Libraries included
 #include<stdio.h>
 #include<stdlib.h>
+
 int main(void)
 {
-  //declarações
+  //declarations
   float n1,n2,n3,n4,nf;
   float somaN=0,media=0,mediaF=0;
-  //programa
+  
+  //program
   printf("Digite a primeira nota do aluno: \n");
   scanf("%f",&n1);
   printf("Digite a segunda nota do aluno: \n");
