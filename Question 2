@@ -1,0 +1,45 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main(void)
+{
+  //declarações
+  float n1,n2,n3,n4,nf;
+  float somaN=0,media=0,mediaF=0;
+  //programa
+  printf("Digite a primeira nota do aluno: \n");
+  scanf("%f",&n1);
+  printf("Digite a segunda nota do aluno: \n");
+  scanf("%f",&n2);
+  printf("Digite a terceira nota do aluno: \n");
+  scanf("%f",&n3);
+  printf("Digite a quarta nota do aluno0: \n");
+  scanf("%f",&n4);
+  somaN=(n1+n2+n3+n4);
+  media=somaN/4;
+  if(media>=5)
+  {
+      printf("o aluno foi aprovado\n");
+      printf("Sua media foi:%f\n",media);
+  }
+  else
+  {
+      printf("O aluno nao foi aprovado\n");
+      printf("Sua media foi %f\n",media);
+      printf("Digite sua nota do exame final: \n");
+      scanf("%f",&nf);
+      mediaF=(media+nf)/2;
+      if(mediaF>=5)
+      {
+          printf("o aluno foi aprovado\n");
+          printf("A sua media final foi %f\n",mediaF);
+      }
+      else
+      {
+          printf("o aluno foi reprovado\n");
+          printf("Sua media foi %f\n",mediaF);
+      }
+  }
+  
+  getch();
+  return 0;    
+}
